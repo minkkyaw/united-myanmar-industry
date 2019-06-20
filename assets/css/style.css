@@ -44,7 +44,7 @@ li {
 }
 
 .logo-img {
-
+    width: 100px;
 }
 
 .nav-bar {
@@ -58,7 +58,7 @@ li {
 
 .nav-item {
     color: inherit;
-    padding: 10px 20px 32.5px;
+    padding: 10px 20px 33.5px;
     border-radius: 10px 10px 0 0;
 }
 

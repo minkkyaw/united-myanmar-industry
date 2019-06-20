@@ -37,7 +37,7 @@
                 
             </div>
             <div class="offer-services content-wrapper">
-                <h3>What we offer!!</h3>
+                <h3>Our Services!!</h3>
                 <hr>
                 <ul class="offer-services">
                     <li class="offer-service">Ship Construction and Design</li>
@@ -45,6 +45,44 @@
                     <li class="offer-service">Blasting and Painting With The Best Quality</li>
                     <li class="offer-service">Dry Docking (Coming Soon)</li>
                 </ul>
+            </div>
+            <div id="calculation">
+                <form action="" id="calc-dwt" class="form-group">
+                    <p>Choose Type of Ship</p>
+                    <div class="radio-btn">
+                        <input type="radio" name="Tugboat" id="tugboat" class="type-of-ship">
+                        <label for="">Tugboat</label>
+                    </div>
+                    <div class="radio-btn">
+                        <input type="radio" name="sand-suction-boat" id="sand-suction-boat" class="type-of-ship">
+                        <label for="">Sand Suction Boat</label>
+                    </div>
+                    <div class="radio-btn">
+                        <input type="radio" name="barge" id="barge" class="type-of-ship">
+                        <label for="">Barge</label>
+                    </div>
+                    <div class="radio-btn">
+                        <input type="radio" name="landing-craft" id="landing-craft" class="type-of-ship">
+                        <label for="">Landing Craft</label>
+                    </div>
+                    
+                    <label for="" id="length" class="form-item">Length -
+                        <input type="text" name="length" id="length-input" class="form-input">
+                    </label>
+                    <br>
+                    <label for="" id="breadth" class="form-item">Breadth -
+                        <input type="text" name="breadth" id="breadth-input" class="form-input">
+                    </label>
+                    <br>
+                    <label for="" id="length" class="form-item">Depth - 
+                        <input type="text" name="depth" id="depth-input" class="form-input" placeholder="Enter the depth of the ship">
+                    </label>
+                    <br>
+                    <button id="calculate">Calculate</button>
+                </form>
+                <div>
+                    <p>Estimated deadweight of the ship = <span id="dwt-result">(You will get after calculation according to your result.)</span></p>
+                </div>
             </div>
         </div>
     </div>
