@@ -21,7 +21,7 @@ a {
 hr {
     border: none;
     border-bottom: 1px solid #555454;
-    width: 500px;
+    width: 50%;
     box-shadow: 0 0 3px 1px rgba(95, 95, 95, 0.1);
     margin: 20px 0;
 }
@@ -64,7 +64,7 @@ li {
 
 .nav-item:hover {
     color: #fff;
-    background: #f57373;
+    background: #f5ae13;
 }
 
 .company-objective {
@@ -85,13 +85,98 @@ li {
     border-radius: 5px;
 }
 
+.container {
+    display: flex;
+}
+
+
+
 .content-wrapper {
-    width: 1000px;
     padding: 20px;
-    margin: 20px auto;
+    margin: 20px;
     border-radius: 20px;
     background-color: #fff;
     box-shadow: 0 0 5px 2px rgba(95, 95, 95, 0.2);
+}
+
+.form-group {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px 2px rgba(95, 95, 95, 0.2);
+}
+
+.radio-btns {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.radio-btn {
+    margin-left: 20px;
+}
+
+.width-75 {
+    display: inline-block;
+    width: 75px;
+}
+
+.form-input {
+    font-size: 1rem;
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid #858585;
+    outline: none;
+    margin: 5px 0;
+}
+
+.calculate-btn {
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 50px;
+    margin: 10px 0;
+    box-shadow: 0 0 3px 1px rgba(145, 145, 145, 0.6);
+}
+
+.calculate-btn:hover {
+    color: rgb(240, 239, 239);
+    background-color: rgb(60, 105, 255);
+}
+
+.calculate-btn:focus {
+    outline: none;
+}
+
+.result-table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.result-table td, .result-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.result-table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.result-table tr:hover {
+    background-color: #ddd;
+}
+
+.result-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
 }
 
 .footer {

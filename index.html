@@ -23,69 +23,73 @@
             </div>
         </div>
     </div>
+    <div class="company-objective">
+        <h2 class="objective">OFFERING THE BEST SERVICE</h2>
+    </div>
 
     <div class="conatiner">
-        <div class="company-objective">
-            <h2 class="objective">OFFERING THE BEST SERVICE</h2>
-        </div>
-
-        <div class="contents">
-            <div class="welcomeToPage content-wrapper">
-                <h2>Welcome To United Myanmar Industry</h2>
-                <hr>
-                <p>United Myanmar Industry is founded in 2016. In 2019, we have built and launched the best quailty ships. We have our own design team to produce efficient designs and our own construction team united with skilled people. Our goal is to be a leading shipyard of Myanmar in the future.</p>
-                
-            </div>
-            <div class="offer-services content-wrapper">
-                <h3>Our Services!!</h3>
-                <hr>
-                <ul class="offer-services">
-                    <li class="offer-service">Ship Construction and Design</li>
-                    <li class="offer-service">Ship Repair</li>
-                    <li class="offer-service">Blasting and Painting With The Best Quality</li>
-                    <li class="offer-service">Dry Docking (Coming Soon)</li>
-                </ul>
-            </div>
-            <div id="calculation">
-                <form action="" id="calc-dwt" class="form-group">
-                    <p>Choose Type of Ship</p>
-                    <div class="radio-btn">
-                        <input type="radio" name="Tugboat" id="tugboat" class="type-of-ship">
-                        <label for="">Tugboat</label>
-                    </div>
-                    <div class="radio-btn">
-                        <input type="radio" name="sand-suction-boat" id="sand-suction-boat" class="type-of-ship">
-                        <label for="">Sand Suction Boat</label>
-                    </div>
-                    <div class="radio-btn">
-                        <input type="radio" name="barge" id="barge" class="type-of-ship">
-                        <label for="">Barge</label>
-                    </div>
-                    <div class="radio-btn">
-                        <input type="radio" name="landing-craft" id="landing-craft" class="type-of-ship">
-                        <label for="">Landing Craft</label>
-                    </div>
+        <div class="about-company-wrapper">
+            <div class="contents">
+                <div class="welcomeToPage content-wrapper">
+                    <h1>Welcome To United Myanmar Industry</h1>
+                    <hr>
+                    <p>United Myanmar Industry is founded in 2016. In 2019, we have built and launched the best quailty ships. We have our own design team to produce efficient designs and our own construction team united with skilled people. Our goal is to be a leading shipyard of Myanmar in the future.</p>
                     
-                    <label for="" id="length" class="form-item">Length -
-                        <input type="text" name="length" id="length-input" class="form-input">
-                    </label>
-                    <br>
-                    <label for="" id="breadth" class="form-item">Breadth -
-                        <input type="text" name="breadth" id="breadth-input" class="form-input">
-                    </label>
-                    <br>
-                    <label for="" id="length" class="form-item">Depth - 
-                        <input type="text" name="depth" id="depth-input" class="form-input" placeholder="Enter the depth of the ship">
-                    </label>
-                    <br>
-                    <button id="calculate">Calculate</button>
-                </form>
-                <div>
-                    <p>Estimated deadweight of the ship = <span id="dwt-result">(You will get after calculation according to your result.)</span></p>
+                </div>
+                <div class="offer-services content-wrapper">
+                    <h2>Our Services!!</h2>
+                    <hr>
+                    <ul class="offer-services">
+                        <li class="offer-service">Ship Construction and Design</li>
+                        <li class="offer-service">Ship Repair</li>
+                        <li class="offer-service">Blasting and Painting With The Best Quality</li>
+                        <li class="offer-service">Dry Docking (Coming Soon)</li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
+        <form id="calc-dwt" class="form-group">
+            <h2>Deadweight Calculation</h2>
+            <hr>
+            
+            <div class="radio-btns">
+                <p>Choose Type of Ship - </p>
+                <div class="radio-btn">
+                    <input type="radio" name="ship-type" value="tugboat" checked>
+                    <label for="">Tugboat</label>
+                </div>
+                <div class="radio-btn">
+                    <input type="radio" name="ship-type" value="sand-suction-boat">
+                    <label for="">Sand Suction Boat</label>
+                </div>
+                <div class="radio-btn">
+                    <input type="radio" name="ship-type" value="barge" >
+                    <label for="">Barge</label>
+                </div>
+                <div class="radio-btn">
+                    <input type="radio" name="ship-type" value="landing-craft">
+                    <label for="">Landing Craft</label>
+                </div>
+            </div>
+            
+            <label for="" id="length" class="form-item"><span class="width-75">Length -</span>
+                <input type="number" name="length" id="length-input" class="form-input" placeholder="Enter the length">
+            </label>
+            <br>
+            <label for="" id="breadth" class="form-item"><span class="width-75">Breadth -</span>
+                <input type="number" name="breadth" id="breadth-input" class="form-input" placeholder="Enter the breadth">
+            </label>
+            <br>
+            <label for="" id="depth" class="form-item"><span class="width-75">Depth -</span>
+                <input type="number" name="depth" id="depth-input" class="form-input" placeholder="Enter the depth">
+            </label>
+            <br>
+            <button id="calculate" class="calculate-btn">Calculate</button>
+            <div id="deadweight">
+                <p>Estimated deadweight of the ship - <span id="dwt-result">(You will get after calculation according to your result.)</span></p>
+            </div>
+        </div>
+    </form>
 
     <div class="footer">
         <div class="contact-informations">
@@ -95,9 +99,9 @@
                 <li class="email">Fax no. : 123455667</li>
             </ul>
             <ul class="contact-information">
-                    <li class="address"><span class="width-100px">Facebook</span><a href="https://www.facebook.com/United-Myanmar-Industry-CoLtd-285209115168249/">: United Myanmar Industry Co., Ltd.</a></li>
-                    <li class="contact-no"><span class="width-100px"></span>Linkedin</span><a href="https://www.facebook.com/United-Myanmar-Industry-CoLtd-285209115168249/">: United Myanmar Industry Co., Ltd.</a></li>
-                    <li class="email"><span class="width-100px"></span>email</span><a href="mailto:unitedmyanmarindustry@gmail.com">: unitedmyanmarindustry@gmail.com</a></li>
+                    <li class="address"><span class="width-100px">Facebook</span><a href="https://www.facebook.com/United-Myanmar-Industry-CoLtd-285209115168249/" target="_blank">: United Myanmar Industry Co., Ltd.</a></li>
+                    <li class="contact-no"><span class="width-100px"></span>Linkedin</span><a href="https://www.facebook.com/United-Myanmar-Industry-CoLtd-285209115168249/" target="_blank">: United Myanmar Industry Co., Ltd.</a></li>
+                    <li class="email"><span class="width-100px"></span>email</span><a href="mailto:unitedmyanmarindustry@gmail.com" target="_blank">: unitedmyanmarindustry@gmail.com</a></li>
                 </ul>
         </div>
         <p>2019 &copy; Min Khant Kyaw</p>
