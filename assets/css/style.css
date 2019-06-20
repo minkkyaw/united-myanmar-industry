@@ -1,0 +1,119 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #1d1d1d;
+    line-height: 1.5;
+    background-color: #fff;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid #555454;
+    width: 500px;
+    box-shadow: 0 0 3px 1px rgba(95, 95, 95, 0.1);
+    margin: 20px 0;
+}
+
+li {
+    margin-left: 20px;
+}
+
+.header {
+    color: #e4e4e4;
+    background-color: #1b5b80;
+    border-bottom: 1px solid #2f2f30;
+    display: flex;
+    padding: 0px 30px;
+}
+
+.logo {
+    width: 40%;
+    padding: 30px;
+}
+
+.logo-img {
+
+}
+
+.nav-bar {
+    width: 60%;
+    text-align: right;
+}
+
+.nav-items {
+    padding: 30px;
+}
+
+.nav-item {
+    color: inherit;
+    padding: 10px 20px 32.5px;
+    border-radius: 10px 10px 0 0;
+}
+
+.nav-item:hover {
+    color: #fff;
+    background: #f57373;
+}
+
+.company-objective {
+    color: #0d4261;
+    font-size: 2rem;
+    background-image: url('https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/34774728_625084861180671_1776830890932961280_o.jpg?_nc_cat=106&_nc_oc=AQmmxfIyVwdgBJ7tx2I54saMEQMyPYOLPww83m2xzBR5C6AOYCZM-HHO1Vbzut0m3Yb4IzO_QAnRw0q3fWpN3sk1&_nc_ht=scontent-iad3-1.xx&oh=017184ebbaac4fd72620cd2155a31b3b&oe=5DC74F62');
+    background-size: cover;
+    background-position-y: 690px;
+    height: 600px;
+    padding: 70px 90px;
+}
+
+.objective {
+    color: #5db9ee;
+    text-align: center;
+    width: 800px;
+    background: rgba(58, 49, 49, 0.6);
+    border-radius: 5px;
+}
+
+.content-wrapper {
+    width: 1000px;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px 2px rgba(95, 95, 95, 0.2);
+}
+
+.footer {
+    color: #fff;
+    text-align: center;
+    background: #01466e;
+    padding: 10px;
+    border-top: 1px solid #858585;
+    padding: 20px;
+}
+
+.contact-informations {
+    display: flex;
+}
+
+.contact-information {
+    text-align: left;
+    width: 50%;
+    margin-left: 15%;
+    margin-bottom: 10px;
+}
+
+.contact-information li {
+    list-style: none;
+}
