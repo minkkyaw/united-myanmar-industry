@@ -4,6 +4,24 @@ let depthInput = document.getElementById('depth-input');
 let dwtResult = document.getElementById('dwt-result');
 let calculateBtn = document.getElementById('calculate');
 let shipType = document.querySelectorAll('input[name=ship-type]');
+let companyObjective = document.getElementById('company-objective');
+let backgroundImageArr = ["assets/images/IMG_7480.jpeg", "assets/images/IMG_0046.jpg", "assets/images/IMG_0047.jpg"]
+let count = 0;
+function changeBackground () {
+    console.log(backgroundImageArr[count]);
+    console.log(count);
+    setInterval(function() {
+        companyObjective.style.backgroundImage = `url(${backgroundImageArr[count]})`;
+        count++;
+    if(count === backgroundImageArr.length) {
+        count = 0;
+    }
+    },3000);
+    
+    console.log(count);
+};
+changeBackground();
+
 
 function dwtInM(draft ,cb ,wtFactor) {
     dwtResult.textContent = '';
