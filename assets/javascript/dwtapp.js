@@ -8,20 +8,20 @@ let companyObjective = document.getElementById('company-objective');
 let submitBtn = document.getElementById('submit');
 let backgroundImageArr = ["assets/images/IMG_7480.jpeg", "assets/images/IMG_0046.jpg", "assets/images/IMG_0047.jpg"]
 let count = 0;
-function changeBackground () {
-    console.log(backgroundImageArr[count]);
-    console.log(count);
-    setInterval(function() {
-        companyObjective.style.backgroundImage = `url(${backgroundImageArr[count]})`;
-        count++;
-    if(count === backgroundImageArr.length) {
-        count = 0;
-    }
-    },3000);
+// function changeBackground () {
+//     console.log(backgroundImageArr[count]);
+//     console.log(count);
+//     setInterval(function() {
+//         companyObjective.style.backgroundImage = `url(${backgroundImageArr[count]})`;
+//         count++;
+//     if(count === backgroundImageArr.length) {
+//         count = 0;
+//     }
+//     },3000);
     
-    console.log(count);
-};
-changeBackground();
+//     console.log(count);
+// };
+// changeBackground();
 
 
 function dwtInM(draft ,cb ,wtFactor) {
@@ -140,4 +140,13 @@ calculateBtn.addEventListener('click', function(e) {
             };
         };
     };
+});
+
+submitBtn.addEventListener('click', function() {
+    if(document.getElementById('username-input').value === "umi" && document.getElementById('password-input').value === "umi" ) {
+        console.log(document.getElementById('username-input').value);
+        document.getElementById('calc-dwt').style.display = 'block';
+    } else {
+        alert('Enter the correct username and password!!');
+    }
 });

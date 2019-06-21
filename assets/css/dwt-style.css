@@ -102,6 +102,10 @@ li {
     box-shadow: 0 0 5px 2px rgba(95, 95, 95, 0.2);
 }
 
+#calc-dwt {
+    display: none;
+}
+
 .form-group {
     padding: 20px;
     margin: 20px;

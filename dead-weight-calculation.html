@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/dwt-style.css">
+
+    <title>United Myanmar Industry</title>
+</head>
+<body>  
+    <div id="user" class="form-group">
+        <h2>Sign in</h2>
+        <label for="" id="username" class="form-item"><span class="width-75">Username -</span>
+            <input type="username" name="length" id="username-input" class="form-input" placeholder="Enter username">
+        </label>
+        <br>
+        <label for="" id="password" class="form-item"><span class="width-75">Password -</span>
+            <input type="passowrd" name="length" id="password-input" class="form-input" placeholder="Enter password">
+        </label>
+        <br>
+        <button id="submit" class="calculate-btn">Submit</button>
+
+    </div>
+    <form id="calc-dwt" class="form-group">
+        <h2>Deadweight Calculation</h2>
+        <hr>
+        
+        <div class="radio-btns">
+            <p>Choose Type of Ship - </p>
+            <div class="radio-btn">
+                <input type="radio" name="ship-type" value="tugboat" checked>
+                <label for="">Tugboat</label>
+            </div>
+            <div class="radio-btn">
+                <input type="radio" name="ship-type" value="sand-suction-boat">
+                <label for="">Sand Suction Boat</label>
+            </div>
+            <div class="radio-btn">
+                <input type="radio" name="ship-type" value="barge" >
+                <label for="">Barge</label>
+            </div>
+            <div class="radio-btn">
+                <input type="radio" name="ship-type" value="landing-craft">
+                <label for="">Landing Craft</label>
+            </div>
+        </div>
+        
+        <label for="" id="length" class="form-item"><span class="width-75">Length -</span>
+            <input type="number" name="length" id="length-input" class="form-input" placeholder="Enter the length">
+        </label>
+        <br>
+        <label for="" id="breadth" class="form-item"><span class="width-75">Breadth -</span>
+            <input type="number" name="breadth" id="breadth-input" class="form-input" placeholder="Enter the breadth">
+        </label>
+        <br>
+        <label for="" id="depth" class="form-item"><span class="width-75">Depth -</span>
+            <input type="number" name="depth" id="depth-input" class="form-input" placeholder="Enter the depth">
+        </label>
+        <br>
+        <button id="calculate" class="calculate-btn">Calculate</button>
+        <div id="deadweight">
+            <p>Estimated deadweight of the ship - <span id="dwt-result">(You will get after calculation according to your result.)</span></p>
+        </div>
+    </form>
+    
+    <script src="assets/javascript/dwtapp.js"></script>
+</body>
+</html>
